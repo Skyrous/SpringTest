@@ -19,10 +19,20 @@ public class Users {
     private Long id;
     @Value("$name: N/a")
     private String name;
+    private String password;
     @Value("$email: N/a")
     private String email;
     @Value("$adress: N/a")
     private String adress;
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     @Value("$phoneNumber: N/a")
     private String phoneNumber;
     public Users() {

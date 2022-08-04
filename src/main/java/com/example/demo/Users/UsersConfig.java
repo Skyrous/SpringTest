@@ -13,7 +13,9 @@ public class UsersConfig {
  {
      return args -> {
         Users Claudiu = new Users("Claudiu","Clauiu@Endava.com","Suceava","07400000");
-         repository.saveAll(List.of(Claudiu));
+         Users Geo = new Users("Georgiana","Geo@Endava.com","Suceava","074312331");
+         Users Alexandra = new Users("Alexandra","Alexandra@taratura.com","Iasington","0769696969");
+         repository.saveAll(List.of(Claudiu,Geo,Alexandra));
      };
 
      }
